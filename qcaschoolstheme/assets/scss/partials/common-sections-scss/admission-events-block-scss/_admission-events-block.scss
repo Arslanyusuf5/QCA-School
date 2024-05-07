@@ -1,0 +1,123 @@
+.qca__admission__events {
+    .image__column {
+
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .admission__background {
+
+        background: var(--fill-primary);
+
+        .admission__counters {
+            padding: 60px 70px;
+            height: 100%;
+
+            @include media-breakpoint-down(md) {
+                padding: 40px 20px;
+            }
+
+            .admission__heading {
+                color: #FFF;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 44px;
+                margin-bottom: 25px;
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 35px;
+                }
+            }
+
+            .admission__description {
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 39.06px;
+                letter-spacing: 0.36px;
+                margin-bottom: 30px;
+
+                @include media-breakpoint-down(lg) {
+                    line-height: 30px;
+                    font-size: 15px;
+                }
+            }
+
+            .admission__events__wrapper {
+
+                .items {
+                    gap: 10px;
+                    position: relative;
+                    margin-bottom: 45px;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        border: 1px solid rgba(217, 217, 217, 0.47);
+                        height: 45px;
+                        bottom: 0;
+                        left: 30px;
+                        z-index: 0;
+                        transform: translate(0px, 100%);
+                    }
+
+                    &:last-child::after {
+                        display: none;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+
+                    .items__counter {
+
+                        background-color: rgba(217, 217, 217, 0.47);
+                        width: 60px;
+                        height: 60px;
+                        flex-shrink: 0;
+                        border-radius: 50%;
+                        text-align: center;
+                        margin: auto 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #FFF;
+                        font-size: 34px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 44px;
+                        position: relative;
+                        z-index: 2;
+                    }
+
+                    .items__counter__content__wrapper {
+                        .items__date {
+                            strong {
+                                color: #FFF;
+                                font-size: 16px;
+                            }
+                        }
+
+                        .items__description {
+                            .event__description {
+                                color: #FFF;
+                                font-size: 16px;
+                                font-weight: 400;
+                                letter-spacing: 0.32px;
+
+                                @include media-breakpoint-down(lg){
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

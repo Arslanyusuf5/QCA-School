@@ -1,0 +1,43 @@
+.epic-gallery{
+
+    overflow: hidden;
+
+    h1{
+        color: $brand-landing-page;
+        text-align: center;
+        font-family: $headings-font-family;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 62.4px; 
+        letter-spacing: -2.88px;
+    }
+   
+    img{
+        height: 499px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .swiper-navigations {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        content: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: static;
+        border: 2px solid $brand-landing-page;
+        border-radius: 50%;
+        width: 45px;
+        background-image: none !important;
+    }
+    
+}

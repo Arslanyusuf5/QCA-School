@@ -1,0 +1,17 @@
+.main-page-common-heading {
+
+    padding: 40px 0px;
+
+    .main__heading {
+        h2 {
+            color: $brand-landing-page;
+            text-align: center;
+            font-family: $headings-font-family;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 62.4px;
+            letter-spacing: -2.88px;
+        }
+    }
+}

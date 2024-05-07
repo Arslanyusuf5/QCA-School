@@ -1,0 +1,91 @@
+.qca__vission {
+    margin: 40px 0px;
+
+    .qca__vission__wrap {
+        display: flex;
+        gap: 83px;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-down(lg) {
+            display: block;
+        }
+
+
+        .qca__vission__images {
+            padding: 20px;
+            position: relative;
+            height: 100%;
+
+            .vission__icon__one {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .vission__icon__two {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .vission__icon__three {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+
+            .vission__icon__four {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .qca__vission__content {
+
+        padding-top: 60px;
+
+        @include media-breakpoint-down(xl) {
+            padding-top: 30px;
+        }
+
+        h2 {
+            margin-bottom: 33px;
+            color: #263238;
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 44px;
+
+            @include media-breakpoint-down(xl) {
+                margin-bottom: 20px;
+            }
+
+            span {
+                color: #33A1ED;
+                font-size: 50px;
+                font-family: pacifico;
+                font-weight: 400;
+                line-height: 44px;
+            }
+        }
+
+        p {
+            color: #696984;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 45px;
+            letter-spacing: 0.44px;
+
+            @include media-breakpoint-down(xl) {
+                line-height: 40px;
+            }
+        }
+    }
+}

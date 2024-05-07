@@ -1,0 +1,299 @@
+.tradition__and__events__tabs {
+
+    .tradition__tabs__list {
+
+        margin-top: -35px;
+        position: relative;
+        z-index: 1;
+
+        .nav-tabs {
+            background: var(--white, #FFF);
+            box-shadow: 0px 4px 17.5px 0px rgba(0, 0, 0, 0.12);
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            @include media-breakpoint-down(xl) {
+                flex-direction: column;
+                max-height: 70px;
+                overflow: hidden;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+                justify-content: flex-start;
+                transition: all 0.3s ease-in-out;
+                gap: 10px;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 20px;
+                    right: 33px;
+                    height: 15px;
+                    width: 15px;
+                    border-top: 0px;
+                    border-right: 0px;
+                    border-bottom: 3px solid #560A5C;
+                    border-left: 3px solid #560A5C;
+                    transform: rotate(-45deg);
+                    z-index: 3;
+                    pointer-events: none;                  
+                }
+
+                &.active {
+                    max-height: 100%;
+
+                    &::before {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            .nav-item {
+                position: relative;
+                z-index: 1;
+
+                @include media-breakpoint-down(xl) {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    &:has(.nav-link.active) {
+                        order: -1;
+                    }
+                }
+
+                .nav-link {
+                    color: rgba(77, 77, 77, 0.76);
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 44px;
+                    border: none;
+
+                    &.active {
+                        color: #560A5C;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .tradition__tabs__content {
+
+        .tab-content {
+
+            .tab-pane {
+
+                .images__wrapper {
+
+                    display: flex;
+                    height: 80vh;
+                    margin: 20px 0px;
+
+                    @include media-breakpoint-down(lg) {
+                        display: flex;
+                        height: auto;
+                        margin: 20px 0px;
+                        flex-direction: column-reverse;
+                    }
+
+                    .image__left {
+
+                        width: calc(50% + 100px);
+
+                        img {
+                            clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+
+                            @include media-breakpoint-down(3xl) {
+                                clip-path: polygon(0 0, 100% 0, 73% 100%, 0% 100%);
+                            }
+
+                            @include media-breakpoint-down(xxl) {
+                                clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
+                            }
+
+                            @include media-breakpoint-down(xl) {
+                                clip-path: polygon(0 0, 100% 0, 62% 100%, 0% 100%);
+                            }
+
+                            @include media-breakpoint-down(lg) {
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                                width: 100%;
+                            }
+                        }
+
+                        @include media-breakpoint-down(3xl) {
+                            width: calc(50% + 20px);
+                        }
+
+                        @include media-breakpoint-down(xxl) {
+                            width: calc(50% + 60px);
+                        }
+
+                        @include media-breakpoint-down(xl) {
+                            width: calc(50% + 75px);
+                        }
+
+                        @include media-breakpoint-down(lg) {
+                            width: 100%;
+                            height: 60vh;
+                        }
+                    }
+
+                    .image__right {
+
+                        width: calc(50% + 100px);
+                        margin-left: -183px;
+                        position: relative;
+                        z-index: 1;
+
+                        @include media-breakpoint-down(3xl) {
+                            width: calc(50% + 140px);
+                        }
+
+                        @include media-breakpoint-down(xxl) {
+                            width: calc(50% + 180px);
+                        }
+
+                        @include media-breakpoint-down(lg) {
+                            width: 100%;
+                            height: 60vh;
+                            margin-left: 0;
+                            margin-bottom: 20px;
+                        }
+
+                        img {
+                            clip-path: polygon(23% 0, 100% 0%, 100% 100%, 0% 100%);
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+
+                            @include media-breakpoint-down(xxl) {
+                                clip-path: polygon(27% 0, 100% 0%, 100% 100%, 0% 100%);
+                            }
+
+                            @include media-breakpoint-down(xl) {
+                                clip-path: polygon(33% 0, 100% 0%, 100% 100%, 0% 100%);
+                            }
+
+                            @include media-breakpoint-down(lg) {
+                                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.41);
+                            z-index: 2;
+                            clip-path: polygon(23% 0, 100% 0%, 100% 100%, 0% 100%);
+                            top: 0;
+                            left: 0;
+                            backdrop-filter: blur(25.850000381469727px);
+
+                            @include media-breakpoint-down(xxl) {
+                                clip-path: polygon(27% 0, 100% 0%, 100% 100%, 0% 100%);
+                            }
+
+                            @include media-breakpoint-down(xl) {
+                                clip-path: polygon(33% 0, 100% 0%, 100% 100%, 0% 100%);
+                            }
+
+                            @include media-breakpoint-down(lg) {
+                                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+                            }
+                        }
+
+                        .content__wrapper {
+
+                            position: absolute;
+                            top: 50%;
+                            left: 60%;
+                            transform: translate(-50%, -50%);
+                            height: 100%;
+                            z-index: 23;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            width: 70%;
+
+                            @include media-breakpoint-down(xl) {
+                                width: 50%;
+                            }
+
+                            @include media-breakpoint-down(lg) {
+                                width: 100%;
+                                left: 50%;
+                                padding: 30px;
+                            }
+
+                            h4 {
+                                color: #FFF;
+                                text-shadow: 0px 4px 47.5px #000;
+                                font-size: 48px;
+                                font-weight: 600;
+                                line-height: 44px;
+                                padding-bottom: 30px;
+
+                                @include media-breakpoint-down(3xl) {
+                                    font-size: 36px;
+                                }
+
+                                @include media-breakpoint-down(xl) {
+                                    font-size: 32px;
+                                }
+
+                                @include media-breakpoint-down(md) {
+                                    font-size: 28px;
+                                }
+
+                                @include media-breakpoint-down(sm) {
+                                    font-size: 26px;
+                                }
+                            }
+
+                            p {
+                                color: #FFF;
+                                text-shadow: 0px 4px 47.5px #000;
+                                font-size: 22px;
+                                font-weight: 500;
+                                line-height: 56.54px;
+                                letter-spacing: 0.44px;
+
+                                @include media-breakpoint-down(3xl) {
+                                    line-height: 40px;
+                                    font-size: 20px;
+                                }
+
+                                @include media-breakpoint-down(xl) {
+                                    line-height: 30px;
+                                    font-size: 18px;
+                                }
+
+                                @include media-breakpoint-down(md) {
+                                    line-height: 28px;
+                                    font-size: 16px;
+                                }
+
+                                @include media-breakpoint-down(sm) {
+                                    line-height: 26px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

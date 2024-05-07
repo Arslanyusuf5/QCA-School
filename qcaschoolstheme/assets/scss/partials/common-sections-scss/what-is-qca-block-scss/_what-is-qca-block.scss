@@ -1,0 +1,129 @@
+.what__is__qca {
+
+    padding: 35px 0px;
+
+    .background__image__wrapper {
+
+        display: flex;
+        justify-content: end;
+        position: relative;
+        height: 100%;
+
+        img {
+            width: 68%;
+            position: absolute;
+            object-fit: cover;
+            z-index: -3;
+        }
+    }
+
+    .all__image__wrap {
+        position: relative;
+
+        .top__corner__image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+        }
+
+        .mid__image__wrap {
+            padding: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right__corner__image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -2;
+        }
+    }
+
+    .what__is__qca__wrap {
+
+        padding: 47px 51px 46px 51px;
+        border-radius: 0px 10px 10px 0px;
+        background: #FFF;
+        box-shadow: 0px 4px 20.9px 0px rgba(0, 0, 0, 0.11);
+
+        @include media-breakpoint-down(xxl) {
+            padding: 35px 51px 35px 51px;
+        }
+
+        @include media-breakpoint-down(xl) {
+            padding: 20px 25px 20px 25px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            border-radius: 0px;
+        }
+
+        h2 {
+            color: var(--fill-primary);
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 44px;
+
+            span {
+                color: var(--fill-primary);
+                font-family: Pacifico;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 44px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                font-size: 32px;
+                line-height: 38px;
+                padding-bottom: 10px;
+            }
+        }
+
+        p {
+            color: #696984;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 44.46px;
+            letter-spacing: 0.36px;
+
+            @include media-breakpoint-down(xxl) {
+                line-height: 36px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .qca__overlay {
+        position: absolute;
+        right: 1%;
+        top: 10%;
+        max-width: 738px;
+        width: 100%;
+
+        @include media-breakpoint-down(xxl) {
+            top: 12%;
+        }
+
+        @include media-breakpoint-down(xl) {
+            right: 0%;
+            width: 67%;
+        }
+
+        @include media-breakpoint-down(lg) {
+            position: inherit;
+            width: 100%;
+            padding-top: 20px;
+        }
+    }
+
+
+}

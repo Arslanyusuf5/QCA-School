@@ -1,0 +1,120 @@
+.accreditation {
+
+    padding: 110px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .accreditation__wrapper {
+        border-radius: 33px;
+        border: 2px solid #FFF;
+        background: rgba(0, 0, 0, 0.20);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(51.900001525878906px);
+        padding-bottom: 60px;
+        padding-top: 58px;
+
+        .acc__title {
+            color: #FFF;
+            font-size: 85px;
+            font-weight: 700;
+            line-height: 44px;
+            text-align: center;
+            padding-bottom: 77px;
+
+            @include media-breakpoint-down(xl){
+                font-size: 80px;
+            }
+
+            @include media-breakpoint-down(md){
+                font-size: 58px;
+                padding-bottom: 53px;
+            }
+
+            @include media-breakpoint-down(sm){
+                font-size: 40px;
+                padding-bottom: 32px;
+            }
+        }
+
+        .accreditation__content {
+            .acc__images__wrap {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 66px;
+                height: 100%;
+
+                @include media-breakpoint-down(xl){
+                    flex-direction: row;
+                }
+
+                @include media-breakpoint-down(md){
+                    flex-direction: column;
+                }
+
+                .image__cognia {
+
+                    img {
+                        max-width: 374px;
+                        max-height: 370px;
+
+                        @include media-breakpoint-down(xl){
+                            max-width: 220px;
+                            max-height: 370px;
+                        }
+                    }
+                }
+
+                .image__isna {
+                    img {
+                        max-width: 453px;
+                        max-height: 163px;
+
+                        @include media-breakpoint-down(xl){
+                            max-width: 302px;
+                            max-height: 163px;
+                        }
+                    }
+                }
+            }
+
+            .row__wrapper{
+
+                @include media-breakpoint-down(xl){
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+
+
+        .accreditation__text {
+            .acc__description {
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 50.04px;
+                letter-spacing: 0.36px;
+                padding-right: 78px;
+
+                @include media-breakpoint-down(xl){
+                    font-size: 17px;
+                    line-height: 40px;
+                    padding: 0px 30px 20px 30px;
+                }
+
+                @include media-breakpoint-down(md){
+                    font-size: 16px;
+                    line-height: 32px;                  
+                }
+
+                @include media-breakpoint-down(sm){
+                    font-size: 14px;
+                    line-height: 28px;                   
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.open__positions {
+    .all__campus__tabs {
+        .all__campus__tabs__content {
+
+            padding-top: 25px;
+
+            .facetwp-facet-position_tabs {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 70px;
+
+                .facetwp-radio {
+                    background: transparent;
+                    background-image: none;
+                    padding: 0;
+                    margin: 0;
+                    color: #A8A29E;
+                    font-size: 19.375px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    padding-bottom: 20px;
+
+                    &.checked {
+                        color: #0C0A09;
+                        border-bottom: 2px solid #0089E8;
+                    }
+
+                    .facetwp-counter {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .all__information__tabs {
+        padding-top: 40px;
+
+        .facetwp-facet-search {
+
+            .facetwp-icon {
+                right: 13px;
+            }
+
+            .facetwp-input-wrap {
+                width: 100%;
+
+                .facetwp-search {
+                    background: rgba(217, 217, 217, 0.68);
+                    padding: 12px 10px;
+                    border: 1px solid rgba(0, 0, 0, 0.10);
+                    border-radius: 1px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .facetwp-facet-locations {
+            width: 100%;
+
+            .facetwp-dropdown {
+                width: 100%;
+                padding: 12px 0px;
+                border: 1px solid rgba(0, 0, 0, 0.10);
+                background: rgba(217, 217, 217, 0.68);
+                border-radius: 1px;
+            }
+        }
+
+        .facetwp-facet-departments {
+            width: 100%;
+
+            .facetwp-dropdown {
+                width: 100%;
+                padding: 12px 0px;
+                border: 1px solid rgba(0, 0, 0, 0.10);
+                background: rgba(217, 217, 217, 0.68);
+                border-radius: 1px;
+            }
+        }
+
+        .facetwp-facet-employments {
+            width: 100%;
+
+            .facetwp-dropdown {
+                width: 100%;
+                padding: 12px 0px;
+                border: 1px solid rgba(0, 0, 0, 0.10);
+                background: rgba(217, 217, 217, 0.68);
+                border-radius: 1px;
+            }
+        }
+
+    }
+
+    .tabs__content{
+        .facetwp-template{
+            .table{
+                td{
+                    padding: 15px 0px;
+                }
+            }
+        }
+    }
+}

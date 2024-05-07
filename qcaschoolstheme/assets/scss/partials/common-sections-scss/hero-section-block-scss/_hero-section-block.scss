@@ -1,0 +1,70 @@
+#hero-section {
+    @include cover-overlay(#010101, 0.60);
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    padding-top: 12vh;
+    padding-bottom: 250px;
+
+    @include media-breakpoint-down(xl) {
+        min-height: 60vh;
+    }
+
+    @include media-breakpoint-down(lg) {
+        min-height: 40vh;
+    }
+
+    .container {
+        z-index: 1;
+    }
+
+    h1 {
+        color: var(--h1-fill-primary);
+        text-align: center;
+        font-family: $headings-font-family;
+        font-size: 104px;
+        line-height: 142px;
+
+        span{
+            color: var(--fill-secondary);
+        }
+
+        @include media-breakpoint-down(xxl) {
+            font-size: 80px;
+            line-height: 109px;
+        }
+
+        @include media-breakpoint-down(xl) {
+            font-size: 73px;
+            line-height: 100px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: 55px;
+            line-height: 80px;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 45px;
+            line-height: 60px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 40px;
+            line-height: 55px;
+        }
+    }
+
+    .btn {
+        padding: 5px 93px;
+        background-color: var(--fill-primary);
+        color: var(--h1-fill-primary);
+
+        &:hover{
+            color: var(--fill-primary);
+            background-color: var(--h1-fill-primary);
+        }
+    }
+}

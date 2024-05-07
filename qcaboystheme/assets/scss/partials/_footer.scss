@@ -1,0 +1,77 @@
+ 
+
+#footer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 0px 60px 0px;
+
+    .address {
+        gap: 10px;
+    }
+
+    .mbl-number {
+        gap: 10px;
+    }
+
+    .timer {
+        gap: 10px;
+    }
+
+    .email {
+        gap: 10px;
+    }
+
+    .footer-form{
+        position: relative;
+    }
+
+    .style-input{
+        padding: 20px;
+        width: 100%;
+        border: transparent;
+        border-radius: 15px;
+        background: #FFF;
+        box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
+    }
+
+    .style-signup{
+        position: absolute;
+        right: 12px; 
+        transform: translate(0%, 30%);
+        border-radius: 20px;
+        background: #0089E8;
+    }
+
+    .form-control{
+        border-radius: 15px;
+        background: #FFF;
+        box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
+    }
+
+    .text-center{
+        align-items: center;
+    }
+
+    .pages-title{
+        color: #0A033C;
+        font-family: $font-family-base;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .page-links{
+        color: #0A033C;
+        font-family: $font-family-base;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+    }
+    .newsletter-footer{
+        padding-top: 66px;
+        flex-direction: column;
+    }
+}

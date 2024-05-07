@@ -1,0 +1,111 @@
+.qca__values {
+    padding: 20px 0px;
+
+    .images__wrapper {
+
+        position: relative;
+
+        .img__middle {
+            padding: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .img__left {
+            position: absolute;
+            border: 6px solid var(--fill-primary);
+            width: 100px;
+            height: 100px;
+            border-radius: 35px 0px 0px 0px;
+            z-index: -1;
+        }
+
+        .right__bottom {
+            position: absolute;
+            border: 6px solid var(--fill-primary);
+            width: 100px;
+            height: 100px;
+            border-radius: 35px 0px 0px 0px;
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+        }
+
+        .img__right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -3;
+        }
+    }
+
+    .values__content__wrapper {
+        padding-left: 60px;
+
+        @include media-breakpoint-down(lg) {
+            padding-top: 30px;
+            padding-left: 0px;
+        }
+
+        h3 {
+            padding-top: 22px;
+            color: var(--fill-primary);
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 44px;
+            margin-bottom: 10px;
+
+            span {
+                font-family: Pacifico;
+                font-weight: 400;
+            }
+
+            @include media-breakpoint-down(xxl) {
+                padding-top: 0px;
+                line-height: 20px;
+            }
+        }
+
+        p {
+            padding-top: 17px;
+            color: rgba(0, 0, 0, 0.79);
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 44.46px;
+            letter-spacing: 0.36px;
+            margin-bottom: 25px;
+
+            @include media-breakpoint-down(xl) {
+                line-height: 30px;
+                font-size: 16px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding-top: 23px;
+            }
+        }
+    }
+
+    .qca__values__icon {
+
+        .honor__icon,
+        .respect__icon {
+            display: flex;
+            gap: 10px;
+        }
+
+        .individuality__icon,
+        .Consciousness__icon {
+            display: flex;
+            gap: 10px;
+        }
+
+        .appreciation__icon {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.qca__benefits {
+
+    padding: 20px 0px;
+
+    .benefits__card__wrapper {
+        border-radius: 5px 40px 5px 12px;
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        margin-bottom: 16px;
+
+        img {
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-bottom: 20px;
+        }
+
+        h3 {
+            padding-left: 32px;
+            color: rgba(12, 10, 9, 0.90);
+            font-family: Poppins;
+            font-size: 22.688px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: rgba(12, 10, 9, 0.62);
+            font-family: Poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            padding-left: 32px;
+        }
+    }
+}

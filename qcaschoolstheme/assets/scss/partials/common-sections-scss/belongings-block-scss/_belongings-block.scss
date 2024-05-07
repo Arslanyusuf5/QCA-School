@@ -1,0 +1,103 @@
+.belongings {
+
+    padding-bottom: 60px;
+
+    .head__title__wrap {
+
+        text-align: center;
+
+        @include media-breakpoint-down(xl) {
+            padding-top: 35px;
+        }
+
+        h3 {
+            color: var(--fill-primary);
+            font-size: 65px;
+            font-weight: 800;
+            line-height: 44px;
+            padding-top: 0px;
+            position: relative;
+            display: inline-block;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 60px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 61.465px;
+                height: 34.873px;
+                transform: rotate(-50deg);
+                flex-shrink: 0;
+                top: 80%;
+                right: -30px;
+                background: #fff;
+                border-top: 2px solid #d6d6d6;
+            }
+        }
+
+        h4 {
+            color: var(--fill-primary);
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 44px;
+            padding-top: 25px;
+            padding-bottom: 70px;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 34px;
+                padding-bottom: 25px;
+            }
+        }
+    }
+
+    .icon_text {
+
+        @include media-breakpoint-down(lg) {
+            padding: 30px 0px;
+        }
+
+        .icon__wrap {
+
+            h5 {
+                padding-left: 10px;
+                color: var(--fill-primary);
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 44px;
+
+                @include media-breakpoint-down(sm){
+                    font-size: 18px;
+                }
+            }
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.70);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 40.16px;
+            letter-spacing: 0.32px;
+            padding-top: 8px;
+        }
+
+        .bl__anchor {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 40.16px;
+            letter-spacing: 0.32px;
+
+            a {
+                color: var(--fill-primary);
+                border: 2px solid var(--fill-primary);
+                padding: 10px 15px;
+
+                &:hover{
+                    background-color: var(--fill-primary);
+                    color: white;
+                }
+            }
+        }
+    }
+}

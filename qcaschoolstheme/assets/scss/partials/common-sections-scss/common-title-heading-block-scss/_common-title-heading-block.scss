@@ -1,0 +1,24 @@
+.common__title__heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .common__title__heading__head {
+        .common__title__heading__text {
+            color: var(--fill-primary);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 44px;
+            border-bottom: 2px solid var(--fill-primary);
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .common__title__heading__title {
+            color: var(--fill-primary);
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 42px;
+            margin-bottom: 15px;
+        }
+    }
+}

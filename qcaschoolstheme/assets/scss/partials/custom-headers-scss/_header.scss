@@ -1,0 +1,279 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+
+    &::before {
+        content: "";
+        position: fixed;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        border: 6px solid rgba(255, 255, 255, 0.5);
+        border-top-color: #ffffff;
+        border-bottom-color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: animate-preloader 1s linear infinite;
+    }
+
+    @keyframes animate-preloader {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+
+.main-header {
+
+    position: fixed;
+    transition: all 0.5s ease;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    background-color: #fff;
+
+    &.sticky {
+        box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+    }
+
+    .desktop-wrapper {
+        img {
+            width: 240px;
+            height: 105px;
+        }
+    }
+
+    .landing-page-button {
+
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        .main-header-button-boys {
+            img {
+
+                width: 40px;
+                height: 35px;
+
+                a {
+                    padding: 10px 10px;
+                    border-radius: 6px;
+                    background: #0089E8;
+                    color: #fff;
+
+                    &:hover {
+                        color: #0089E8;
+                        background: #fff;
+                        border: 1px solid #0089E8;
+                        transition: all .4s ease-out;
+                        transition-timing-function: cubic-bezier(0.400, 0.000, 0.200, 1.000);
+                    }
+                }
+
+            }
+
+
+
+
+            @include media-breakpoint-down(xl) {
+                display: none;
+            }
+        }
+
+
+        .main-header-button-girls {
+
+            img {
+
+                width: 40px;
+                height: 35px;
+
+                a {
+                    padding: 10px 10px;
+                    border-radius: 6px;
+                    background: #560A5C;
+                    color: #fff;
+
+                    &:hover {
+                        color: #560A5C;
+                        background: #fff;
+                        border: 1px solid #560A5C;
+                        transition: all .4s ease-out;
+                        transition-timing-function: cubic-bezier(0.400, 0.000, 0.200, 1.000);
+                    }
+                }
+            }
+
+
+
+            @include media-breakpoint-down(xl) {
+                display: none;
+            }
+        }
+
+        .donate-now-buttons {
+
+
+            a {
+                padding: 10px 10px;
+                border-radius: 6px;
+                background: #560A5C;
+                color: #fff;
+
+                &:hover {
+                    color: #560A5C;
+                    background: #fff;
+                    border: 1px solid #560A5C;
+                    transition: all .4s ease-out;
+                    transition-timing-function: cubic-bezier(0.400, 0.000, 0.200, 1.000);
+                }
+            }
+
+            @include media-breakpoint-down(xl) {
+                display: none;
+            }
+        }
+
+    }
+
+
+
+    li {
+        a {
+            color: #000;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+
+
+            &:hover,
+            &:active {
+                color: #33A1ED;
+                border-bottom: 1px solid #33A1ED;
+                transition: all .4s ease-out;
+                transition-timing-function: cubic-bezier(0.400, 0.000, 0.200, 1.000);
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 30px;
+        margin: 0;
+        flex-wrap: wrap;
+
+        @include media-breakpoint-down(xl) {
+            display: none;
+        }
+    }
+
+    .mobile-nav {
+        display: none;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+
+        @include media-breakpoint-down(xl) {
+            display: block;
+            position: absolute;
+            width: 100%;
+            z-index: 99;
+            background-color: #fff;
+            padding: 40px 20px;
+            top: 105px;
+            left: 0;
+            transform: translateX(-100vw);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .main-header-button-boys {
+            padding: 12px 24px;
+            border-radius: 6px;
+            background: #0089E8;
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 30px;
+            max-width: 172px;
+            font-family: Pacifico;
+
+            a {
+                color: #fff;
+            }
+
+        }
+
+        .main-header-button-girls {
+            padding: 12px 24px;
+            border-radius: 6px;
+            background: #560A5C;
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 30px;
+            max-width: 172px;
+            font-family: Pacifico;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    &.mob-menu-active {
+        .mobile-nav {
+            transform: none;
+        }
+    }
+
+    .btn-toggler-wrapper {
+
+        display: none;
+
+        @include media-breakpoint-down(xl) {
+            display: block;
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 35px;
+                height: 35px;
+                border: 1px solid #2222;
+                border-radius: 5px;
+                transition: all 0.2s ease-in-out;
+
+                i {
+                    font-size: 18px;
+                    color: #0089E8;
+                    transition: all 0.2s ease-in-out;
+                }
+
+                &:hover,
+                &.active {
+                    background-color: #0089E8;
+
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

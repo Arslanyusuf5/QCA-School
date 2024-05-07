@@ -1,0 +1,33 @@
+04/26/23 9:06:00: style.scss - Undefined mixin media-breakpoint-up: partials/_menu.scss on line 6, at column 5
+Call Stack:
+#0 import partials/_menu.scss style.scss on line 3
+04/26/23 9:51:07: style.scss - Undefined mixin global-font: partials/_global.scss on line 23, at column 5
+Call Stack:
+#0 import partials/_global.scss style.scss on line 1
+04/26/23 9:53:08: style.scss - Undefined mixin global-font: partials/_global.scss on line 23, at column 5
+Call Stack:
+#0 import partials/_global.scss style.scss on line 1
+04/27/23 12:56:05: style.scss - Only 1 argument allowed, but 2 were passed.: partials/_elements.scss on line 76, at column 5
+Call Stack:
+#0 import partials/_elements.scss style.scss on line 3
+04/27/23 12:56:10: style.scss - Only 1 argument allowed, but 2 were passed.: partials/_elements.scss on line 76, at column 5
+Call Stack:
+#0 import partials/_elements.scss style.scss on line 3
+09/27/23 2:46:29: style.scss - `partials/home/_featured` file not found for @import: style.scss on line 9, at column 1
+09/27/23 4:18:32: style.scss - `partials/home/_hero` file not found for @import: style.scss on line 8, at column 1
+09/27/23 4:20:33: style.scss - `partials/home/_hero` file not found for @import: style.scss on line 8, at column 1
+12/31/23 3:50:14: style.scss - `partials/home-page/_home-hero` file not found for @import: style.scss on line 9, at column 1
+12/31/23 3:51:15: style.scss - `partials/home-page/_home-hero` file not found for @import: style.scss on line 9, at column 1
+01/10/24 8:01:30: style.scss - `partials/home-page/_home-hero` file not found for @import: style.scss on line 9, at column 1
+01/10/24 8:01:47: style.scss - `partials/home-page/_home-hero` file not found for @import: style.scss on line 9, at column 1
+01/10/24 8:02:47: style.scss - `partials/home-page/_home-hero` file not found for @import: style.scss on line 9, at column 1
+01/10/24 8:03:31: style.scss - `partials/home_hero_block/_home-hero` file not found for @import: style.scss on line 9, at column 1
+01/11/24 9:13:08: style.scss - unexpected }: failed at `` D:\xampp\htdocs\QCA-Schools\qca-schools\wp-content\themes\qca_schools_theme\assets\scss\partials/qca-programms-block-scss/_qca-programms.scss on line 101, at column 0
+01/12/24 3:36:04: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:05: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:05: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:15: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:17: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:30: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:33: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:45: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1

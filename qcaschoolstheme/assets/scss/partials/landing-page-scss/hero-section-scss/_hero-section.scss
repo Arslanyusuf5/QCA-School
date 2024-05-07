@@ -1,0 +1,160 @@
+.hero__section__common {
+
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.70);
+        backdrop-filter: blur(2.299999952316284px);
+        z-index: 0;
+    }
+
+    .hero__section__common__wrapper {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 25px;
+
+        h1 {
+            color: white;
+            font-size: 85px;
+            font-weight: 700;
+            line-height: 142px;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 85px;
+                line-height: 90px;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 70px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 42px;
+                line-height: 53px;
+            }
+
+            span {
+                color: var(--fill-secondary);
+                font-family: pacifico;
+                font-weight: 400;
+            }
+        }
+
+        p {
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 32px;
+            letter-spacing: 0.32px;
+            width: 72%;
+            margin: 0 auto;
+
+            @include media-breakpoint-down(xl) {
+                width: 90%;
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+                padding-top: 40px;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+
+        .btn {
+            padding: 5px 93px;
+            background-color: var(--fill-primary);
+            color: white;
+
+            @include media-breakpoint-down(sm) {
+                padding: 5px 53px;
+            }
+        }
+
+
+        .hero__section__common__button__wrapper {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+            @include media-breakpoint-down(sm) {
+                flex-direction: column;
+                gap: 45px;
+            }
+
+            .apply__now {
+                .anchor_-apply__now {
+                    border-radius: 5px 0px 0px 5px;
+                    background: white;
+                    padding: 13px 72px 13px 71px;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 26.74px;
+
+                    @include media-breakpoint-down(sm) {
+                        border-radius: 5px 5px 5px 5px;
+                    }
+                }
+            }
+
+            .fee__structure {
+                .anchor__fee__structure {
+                    border-radius: 0px 5px 5px 0px;
+                    border: 1px solid var(--fill-primary);
+                    background: var(--fill-primary);
+                    padding: 12px 58px;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 26.74px;
+
+                    @include media-breakpoint-down(sm) {
+                        border-radius: 5px 5px 5px 5px;
+                        padding: 13px 62px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.hero__qca__marquee {
+
+    .marquee__content {
+        background-color: #0089E8;
+        padding: 11px 0px;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        p {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.48px;
+            margin: 0;
+        }
+    }
+}

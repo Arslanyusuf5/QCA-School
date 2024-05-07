@@ -1,0 +1,264 @@
+.application__process {
+    padding: 30px 0px;
+
+    .application__title__wrap {
+
+        .apply__heading__text {
+            color: var(--fill-primary);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 44px;
+            border-bottom: 2px solid var(--fill-primary);
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .apply__description {
+            color: var(--fill-primary);
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 44px;
+            margin-bottom: 50px;
+
+            @include media-breakpoint-down(lg){
+                font-size: 35px;
+                line-height: 42px;
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+    .application__col {
+
+        @include media-breakpoint-down(xl) {
+            padding-bottom: 22px;
+        }
+
+        .application__tab {
+            background: #FFF;
+            box-shadow: 0px 4px 11.3px 0px rgba(0, 0, 0, 0.12);
+            height: 100%;
+            border-top: 11px solid var(--fill-primary);
+        }
+
+        .tab__image {
+            padding: 43px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid rgba(196, 196, 196, 0.29);
+        }
+
+        .tab__body {
+
+            padding: 0px 20px 25px 20px;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 23px;
+                height: 23px;
+                background-color: var(--fill-primary);
+                position: absolute;
+                top: -13px;
+                left: 100%;
+                border-radius: 50%;
+            }
+
+            @include media-breakpoint-down(xl) {
+                &::after {
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 0%);
+                }
+            }
+
+            &::before {
+                content: "";
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                border: 2px solid white;
+                left: calc(100% + 6px);
+                top: -5.5px;
+                display: inline-block;
+                z-index: 333;
+                border-width: 2px 2px 0 0;
+                transform: rotate(45deg);
+            }
+
+            @include media-breakpoint-down(xl) {
+                &::before {
+                    left: calc(50% + -4px);
+                    top: 103%;
+                    transform: rotate(135deg);
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                &::before {
+                    top: 103%;
+                }
+            }
+
+            h4 {
+                color: var(--fill-primary);
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 44px;
+                padding: 10px 0px;
+                text-align: center;
+
+
+            }
+
+            .tab__list__ul {
+                li {
+                    color: rgba(0, 0, 0, 0.63);
+                    font-weight: 400;
+                    line-height: 25.8px;
+                    font-size: 12px;
+                    letter-spacing: 0.24px;
+                }
+            }
+        }
+
+        position: relative;
+
+        &:nth-last-child(1) {
+            .application__tab {
+                .tab__body {
+                    &::after {
+                        display: none;
+                    }
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+            }
+        }
+
+        &:nth-last-child(2) {
+            .application__tab {
+
+                display: flex;
+                flex-direction: column;
+
+                .tab__body {
+
+                    height: 100%;
+
+                    &::after {
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+
+                    &::before {
+                        content: "";
+                        width: 8px;
+                        height: 8px;
+                        position: absolute;
+                        border: 2px solid white;
+                        left: 50%;
+                        top: calc(100% + 6px);
+                        display: inline-block;
+                        z-index: 333;
+                        border-width: 2px 2px 0 0;
+                        transform: translateX(-50%) rotate(134deg);
+                    }
+                }
+
+            }
+        }
+
+
+        &:last-child {
+
+            width: 100%;
+
+            .application__tab {
+                display: flex;
+                border-left: 11px solid var(--fill-primary);
+                border-top: 0;
+                margin-top: 23px;
+
+                @include media-breakpoint-down(xl) {
+                    display: block;
+                    border-top: 11px solid var(--fill-primary);
+                    border-left: none;
+                }
+
+                .tab__image {
+                    padding: 0px 40px;
+                    display: flex;
+                    justify-content: center;
+                    border-right: 2px solid rgba(196, 196, 196, 0.29);
+                    border-bottom: 0;
+                    max-width: 250px;
+                    align-items: center;
+                    width: 100%;
+
+                    @include media-breakpoint-down(xl) {
+                        border-bottom: 2px solid rgba(196, 196, 196, 0.29);
+                        border-right: transparent;
+                        max-width: 100%;
+                        width: 100%;
+                        padding: 40px 0px;
+                    }
+                }
+
+                .tab__body {
+                    padding: 40px 0px 0px 10px;
+
+                    @include media-breakpoint-down(xl) {
+                        padding: 10px 0px 0px 20px;
+                    }
+
+
+                    h4 {
+                        color: var(--fill-primary);
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 44px;
+                        text-align: left;
+                        padding-left: 14px;
+
+                        @include media-breakpoint-down(xl) {
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                    }
+
+                    .tab__list__ul {
+
+                        li {
+                            color: rgba(0, 0, 0, 0.63);
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 30.1px;
+                            letter-spacing: 0.28px;
+
+                            @include media-breakpoint-down(xl) {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        @include media-breakpoint-down(xl) {
+            &:last-child {
+                padding-bottom: 0px;
+
+                .application__tab {
+                    margin-top: 1px;
+                }
+            }
+        }
+    }
+}

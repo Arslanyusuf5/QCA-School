@@ -1,0 +1,329 @@
+.schedule__booking__form {
+
+    margin-top: -60px;
+    position: relative;
+
+    .schedule__booking__form__row {
+
+        @include media-breakpoint-down(lg){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .booking__contact__form__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 30px 20px 30px;
+            background: var(--white, #FFF);
+            box-shadow: 0px 2px 170.6px -80px rgba(0, 0, 0, 0.64);
+
+
+            .student-label,
+            .contact-info-label,
+            .campus-label {
+                label {
+                    color: rgba(0, 0, 0, 0.75);
+                    font-size: 20px;
+                    font-weight: 500;
+                    padding-top: 10px;
+
+                    @include media-breakpoint-down(md){
+                        font-size: 16px;
+                    }
+            
+                }
+            }
+
+            .child-name,
+            .parent-info {
+                display: flex;
+                gap: 15px;
+                padding: 15px 0px;
+
+                @include media-breakpoint-down(xl) {
+                    display: block;
+                    padding: 15px 0px 0px 0px;
+                }
+
+                .input-field {
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.04);
+                    border: none;
+                    padding: 12px;
+                    color: rgba(48, 58, 66, 0.50);
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+
+                    @include media-breakpoint-down(xl) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .child-info {
+                display: flex;
+                gap: 15px;
+                padding: 15px 0px;
+
+                @include media-breakpoint-down(xl) {
+                    display: block;
+                    padding: 0px;
+                }
+
+                span {
+                    width: 50%;
+                }
+
+                .input-field {
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.04);
+                    border: none;
+                    padding: 12px;
+                    color: rgba(48, 58, 66, 0.5);
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+
+                    @include media-breakpoint-down(xl) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .parent-mail,
+            .city-state,
+            .gender-interested {
+
+                padding: 20px 0px;
+
+                @include media-breakpoint-down(xl) {
+                    padding: 0px;
+                }
+
+                .input-field {
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.04);
+                    border: none;
+                    padding: 12px 39px 12px 12px;
+                    color: rgba(48, 58, 66, 0.5);
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+
+                    @include media-breakpoint-down(xl) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .radio-button-class {
+                padding: 15px 0px;
+
+                .input-field {
+                    display: flex;
+                    gap: 30px;
+                    color: rgba(48, 58, 66, 0.80);
+                    font-family: Poppins;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+
+                    label {
+                        position: relative;
+                        cursor: pointer;
+
+                        input[type=radio] {
+                            position: relative;
+                            visibility: hidden;
+                            margin-left: 20px;
+
+                            &+span {
+                                &::before {
+                                    display: block;
+                                    position: absolute;
+                                    content: '';
+                                    border-radius: 100%;
+                                    height: 20px;
+                                    width: 20px;
+                                    top: 2px;
+                                    border: 2px solid var(--fill-primary);
+                                    opacity: 0.5;
+                                }
+
+                                &::after {
+                                    display: block;
+                                    position: absolute;
+                                    content: '';
+                                    border-radius: 100%;
+                                    height: 10px;
+                                    width: 10px;
+                                    top: 7px;
+                                    left: 5px;
+                                    visibility: hidden;
+                                }
+                            }
+                        }
+
+                        input[type=radio]:checked+span::before {
+                            background: transparent;
+                        }
+
+                        input[type=radio]:checked+span::after {
+                            background: var(--fill-primary);
+                            visibility: visible;
+                        }
+                    }
+
+                    span {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .submit-button-booking {
+
+                padding-top: 10px;
+
+                input {
+                    background: var(--fill-primary);
+                    width: 100%;
+                    border: none;
+                    padding: 15px;
+                    border-radius: inherit;
+                    color: white;
+
+                    &:hover{
+                        color: var(--fill-primary);
+                        background-color: #FFF;
+                        border: 2px solid var(--fill-primary);
+                    }
+                }
+            }
+        }
+    }
+
+    .qca__video__wrapper__booking {
+
+        min-height: 50vh;
+        height: 100%;
+
+        @include media-breakpoint-down(lg) {
+            height: 50vh;
+        }
+
+        .video__content__image__booking {
+
+            position: relative;
+            height: 100%;
+
+            .overlay__on__image__booking {
+
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+
+            .overlay__content__booking {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background: rgba(1, 1, 1, 0.73);
+                backdrop-filter: blur(0px);
+                z-index: 0;
+                cursor: pointer;
+
+                .overlay__content__wrap__booking {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 30px;
+
+                    a {
+                        text-align: center;
+
+                        img {
+                            width: 60%;
+                        }
+                    }
+
+                    h2 {
+                        color: #FFF;
+                        font-size: 50px;
+                        font-weight: 500;
+                        line-height: 44px;
+                        text-align: center;
+
+                        @include media-breakpoint-down(lg) {
+                            font-size: 35px;
+                            text-align: center;
+                        }
+
+                        @include media-breakpoint-down(sm) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    p {
+                        color: rgba(255, 255, 255, 0.57);
+                        font-size: 30px;
+                        font-weight: 500;
+                        line-height: 44px;
+                        text-align: center;
+
+
+                        @include media-breakpoint-down(lg) {
+                            font-size: 18px;
+                            text-align: center;
+                        }
+
+                        @include media-breakpoint-down(sm) {
+                            font-size: 14px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .modal-content {
+
+            background-color: transparent;
+            border: none;
+
+            iframe {
+                width: 100%;
+                height: 400px;
+            }
+
+            .modal-header {
+
+                border: none;
+
+                .btn-close {
+                    filter: invert(1);
+                    opacity: 1;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.qca-location {
+    
+    .location-wrap {
+
+        background: var(--h1-fill-primary);
+        box-shadow: -1px 4px 23.9px 0px rgba(0, 0, 0, 0.13);
+        padding: 20px 0px 20px 0px;
+
+        @include media-breakpoint-down(sm) {
+            margin: 0px;
+        }
+    }
+
+    h3 {
+        color: var(--fill-primary);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px;
+        border-bottom: 2px solid var(--fill-primary);
+        display: inline-block;
+    }
+
+    h2 {
+        color:  var(--fill-primary);
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px;
+        margin: 10px 0px 30px 0px;
+    }
+
+
+    .title-wrap {
+        width: 100%;
+        height: 100%;
+
+        iframe{
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+        }
+    }
+
+    .form-group {
+        border-radius: 10px;
+        border: 1px solid var(--input-fields-border-fill);
+        margin-bottom: 18px;
+    }
+
+    .form-wrap {
+
+        h5 {
+            color: var(--advanced-ed-paragraph-fill);
+            font-size: 38px;
+            font-weight: 600;
+            line-height: normal;
+            text-align: center;
+            padding: 11px 0px;
+
+            span {
+                color: var(--fill-primary);
+                font-family: Pacifico;
+                font-size: 38px;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        p {
+            color: var(--advanced-ed-paragraph-fill);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.12px;
+        }
+
+        .btn {
+            width: 100%;
+            background-color:  var(--fill-primary);
+            color: var(--h1-fill-primary);
+
+            &:hover{
+                color:  var(--fill-primary);
+                background-color: var(--h1-fill-primary);
+                border: 1px solid var(--fill-primary);
+            }
+        }
+    }
+}

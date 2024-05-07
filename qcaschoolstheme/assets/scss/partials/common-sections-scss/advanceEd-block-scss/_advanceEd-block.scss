@@ -1,0 +1,122 @@
+#advance-ed {
+    margin: 0px 0px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .bg-images {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        @include media-breakpoint-down(md) {
+            display: block;
+
+            .first-image {
+                display: none;
+            }
+        }
+
+        img {
+            width: 50%;
+            height: 100%;
+            object-fit: fill;
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+    }
+
+    .stripe-one {
+        background: var(--fill-primary);
+        width: 38px;
+        height: 112px;
+        flex-shrink: 0;
+    }
+
+    .wrapper-stripe {
+        gap: 10px;
+        padding-right: 360px;
+
+        @include media-breakpoint-down(md) {
+            padding-right: 180px;
+        }
+    }
+
+    .text-background {
+        padding: 67px 95px 19px 95px;
+        background: rgba(255, 255, 255, 0.69);
+        backdrop-filter: blur(8.850000381469727px);
+        position: relative;
+
+        @include media-breakpoint-down(md) {
+            padding: 68px 31px 19px 43px;
+        }
+
+        img {
+            position: absolute;
+            top: 12px;
+            left: 50px;
+
+            @include media-breakpoint-down(xl) {
+                top: 8px;
+            }
+
+            @include media-breakpoint-down(md) {
+                top: 4px;
+                left: 6px;
+            }
+        }
+
+        p {
+            color: var(--advanced-ed-paragraph-fill);
+            font-family: $headings-font-family;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 48px;
+
+            @include media-breakpoint-down(xl) {
+                line-height: 45px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                line-height: 34px;
+                font-size: 17px;
+            }
+
+            @include media-breakpoint-down(md) {
+                line-height: 25px;
+                font-size: 14px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                line-height: 25px;
+                font-size: 14px;
+            }
+
+        }
+
+        .btn {
+            background-color: var(--fill-primary);
+            color: var(--h1-fill-primary);
+
+            &:hover {
+                color: var(--fill-primary);
+                background-color: var(--h1-fill-primary);
+                border: 1px solid var(--fill-primary);
+            }
+        }
+    }
+}

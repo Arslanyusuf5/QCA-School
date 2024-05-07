@@ -1,0 +1,67 @@
+@import 'partials/root-scss/_global';
+@import 'partials/root-scss/_mixins';
+@import 'partials/root-scss/_elements';
+@import 'partials/custom-headers-scss/_header';
+@import 'partials/custom-headers-scss/_header-girls';
+@import 'partials/custom-headers-scss/_header-boys';
+@import 'partials/custom-footers-scss/_footer';
+@import 'partials/custom-footers-scss/_footer-girls';
+@import 'partials/custom-footers-scss/_footer-boys';
+@import 'partials/root-scss/_mobile-nav';
+
+// Landing Page Blocks Scss
+@import 'partials/landing-page-scss/home_hero_block_scss/_home-hero';
+@import 'partials/landing-page-scss/qca-programms-block-scss/_qca-programms.scss';
+@import 'partials/landing-page-scss/our-mission-block-scss/_our-mission.scss';
+@import 'partials/landing-page-scss/join-us-now-scss/_join-us-now.scss';
+@import 'partials/landing-page-scss/our-testimonial-block-scss/_our-testimonial.scss';
+@import 'partials/landing-page-scss/epic-gallery-block-scss/_epic-gallery.scss';
+@import 'partials/landing-page-scss/qca-mission-block-scss/_qca-mission-block.scss';
+@import 'partials/landing-page-scss/qca-vission-block-scss/_qca-vission-block.scss';
+@import 'partials/landing-page-scss/qca-marquee-slider-block-scss/_qca-marquee-slider-block.scss';
+@import 'partials/landing-page-scss/qca-milestones-block-scss/_qca-milestones-block.scss';
+@import 'partials/landing-page-scss/qca-academy-block-scss/_qca-academy-block.scss';
+@import 'partials/landing-page-scss/common-title-heading-hero-block-scss/_common-title-heading-hero-block.scss';
+@import 'partials/landing-page-scss/tabs-searchbar-block-scss/_tabs-searchbar-block.scss';
+@import 'partials/landing-page-scss/accreditation-block-scss/_accreditation-block.scss';
+@import 'partials/landing-page-scss/contact-us-form-block-scss/_contact-us-form-block.scss';
+@import 'partials/landing-page-scss/contact-us-hero-section-scss/_contact-us-hero-section.scss';
+@import 'partials/landing-page-scss/hero-section-scss/_hero-section.scss';
+@import 'partials/landing-page-scss/main-page-common-heading-scss/_main-page-common-heading.scss';
+@import 'partials/landing-page-scss/hiring-process-cards-scss/_hiring-process-cards.scss';
+@import 'partials/landing-page-scss/open-positions-scss/_open-positions.scss';
+@import 'partials/landing-page-scss/qca-benefits-block-scss/_qca-benefits-block.scss';
+
+
+// Common Blocks Scss
+@import 'partials/common-sections-scss/hero-section-block-scss/_hero-section-block.scss';
+@import 'partials/common-sections-scss/hero-cards-block-scss/_hero-cards-block.scss';
+@import 'partials/common-sections-scss/about-us-block-scss/_about-us.scss';
+@import 'partials/common-sections-scss/advanceEd-block-scss/_advanceEd-block.scss';
+@import 'partials/common-sections-scss/our-gallery-block-scss/_our-gallery-block.scss';
+@import 'partials/common-sections-scss/support-qca-block-scss/_support-qca-block.scss';
+@import 'partials/common-sections-scss/qca-location-block-scss/_qca-location-block.scss';
+@import 'partials/common-sections-scss/admission-and-fee-hero-block-scss/_admission-and-fee-hero-block.scss';
+@import 'partials/common-sections-scss/admission-fee-structure-scss/_admission-fee-structure.scss';
+@import 'partials/common-sections-scss/admission-details-block-scss/_admission-details-block.scss';
+@import 'partials/common-sections-scss/admission-events-block-scss/_admission-events-block.scss';
+@import 'partials/common-sections-scss/application-process-block-scss/_application-process-block.scss';
+@import 'partials/common-sections-scss/our-courses-block-scss/_our-courses-block.scss';
+@import 'partials/common-sections-scss/common-title-heading-block-scss/_common-title-heading-block.scss';
+@import 'partials/common-sections-scss/academic-callender-block-scss/_academic-callender-block.scss';
+@import 'partials/common-sections-scss/what-is-qca-block-scss/_what-is-qca-block.scss';
+@import 'partials/common-sections-scss/qca-values-scss/_qca-values.scss';
+@import 'partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss';
+@import 'partials/common-sections-scss/common-cta-footer-scss/_common-cta-footer.scss';
+@import 'partials/common-sections-scss/student-experience-block-scss/_student-experience-block.scss';
+@import 'partials/common-sections-scss/belongings-block-scss/_belongings-block.scss';
+@import 'partials/common-sections-scss/sisterhood-block-scss/_sisterhood-block.scss';
+@import 'partials/common-sections-scss/qca-community-block-scss/_qca-community-block.scss';
+@import 'partials/common-sections-scss/community-cards-block-scss/_community-cards-block.scss';
+@import 'partials/common-sections-scss/leading-accordian-block-scss/_leading-accordian-block.scss';
+@import 'partials/common-sections-scss/leading-school-grads-scss/_leading-school-grads.scss';
+@import 'partials/common-sections-scss/half-width-block-scss/_half-width-block.scss';
+@import 'partials/common-sections-scss/technology-cards-block-scss/_technology-cards-block.scss';
+@import 'partials/common-sections-scss/tradition-and-event-tabs-block-scss/_tradition-and-event-tabs.scss';
+@import 'partials/common-sections-scss/schedule-booking-form-scss/_schedule-booking-form.scss';
+@import 'partials/common-sections-scss/color-code-block-scss/_color-code-block.scss';

@@ -1,0 +1,85 @@
+.footer__girls {
+    background: var(--fill-primary);
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px 0px 60px 0px;
+    margin-top: 30px;
+
+    .footer__top__girls {
+
+        .footer__girls__email {
+
+            padding: 20px 0px;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        p {
+            color: #fff;
+        }
+
+        .text-center {
+            align-items: center;
+        }
+
+        .pages-title-girls {
+            color: #fff;
+            font-family: $font-family-base;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .page-links-girls {
+            color: #fff;
+            font-family: $font-family-base;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .newsletter-footer-girls {
+            flex-direction: column;
+            padding: 20px 0px;
+
+            .footer-form {
+                position: relative;
+            }
+
+            .style-input {
+                padding: 21px;
+                width: 100%;
+                border: transparent;
+                border-radius: 6px;
+                background: #FFF;
+                box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
+
+                @include media-breakpoint-down(lg) {
+                    padding: 19px;
+                }
+            }
+
+            .style-signup {
+                position: absolute;
+                right: 0px;
+                transform: translate(0%, 30%);
+                border-radius: 0px 6px 6px 0px;
+                background: #7A1782;
+                padding: 22px;
+                top: -21px;
+            }
+
+            .form-control {
+                border-radius: 6px;
+                background: #FFF;
+                box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
+            }
+        }
+    }
+}

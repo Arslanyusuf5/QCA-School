@@ -1,0 +1,473 @@
+.fee__structure {
+
+    position: relative;
+    z-index: 6;
+
+    .fee__structure__wrapper {
+
+        margin-top: -58px;
+
+        .fee__structure__tuition {
+
+            .fee__structure__heading {
+
+                background: var(--fill-primary);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.01);
+                padding: 35px 0px 35px 30px;
+                color: #FFF;
+                font-size: 35px;
+                font-weight: 600;
+                line-height: 44px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                @include media-breakpoint-down(xl) {
+                    font-size: 26px;
+                }
+
+                @include media-breakpoint-down(md) {
+                    font-size: 22px;
+                    padding: 33px 0px 22px 14px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 18px;
+                    display: block;
+                    line-height: 30px;
+                }
+
+                span {
+                    color: #fff;
+                    font-family: Pacifico;
+                    font-weight: 400;
+                }
+            }
+
+            .tuition__fee__table {
+                .tuition__fee__content {
+                    thead {
+                        th {
+                            background: var(--fill-primary);
+                            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.01);
+                            padding: 24px;
+                            border: 12px solid #fff;
+                            color: #FFF;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 44px;
+                            vertical-align: middle;
+
+                            @include media-breakpoint-down(xl) {
+                                padding: 15px;
+                                font-size: 17px;
+                                line-height: 29px;
+                            }
+
+                            @include media-breakpoint-down(lg) {
+                                padding: 15px;
+                                font-size: 18px;
+                                line-height: 24px;
+                            }
+
+                            @include media-breakpoint-down(sm) {
+                                padding: 5px;
+                                font-size: 14px;
+                                line-height: 21px;
+                            }
+
+                            &:first-child {
+                                border-left: none;
+                            }
+
+                            &:last-child {
+                                border-right: none;
+                            }
+                        }
+                    }
+
+                    tbody {
+
+                        tr {
+                            &:nth-of-type(odd) {
+                                background: rgba(0, 38, 73, 0.20);
+                            }
+
+                            &:nth-of-type(even) {
+                                background: rgba(0, 38, 73, 0.10);
+                            }
+                        }
+
+                        td {
+                            background: rgba(0, 38, 73, 0.20);
+                            padding: 18px 30px;
+                            border: 12px solid #fff;
+                            color: rgba(0, 0, 0, 0.61);
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 44px;
+
+                            @include media-breakpoint-down(lg) {
+                                padding: 18px 18px;
+                                font-size: 14px;
+                                line-height: 27px;
+                            }
+
+                            @include media-breakpoint-down(sm) {
+                                font-size: 12px;
+                                line-height: 20px;
+                                padding: 18px 5px;
+                            }
+
+                            &:first-child {
+                                border-left: none;
+                            }
+
+                            &:last-child {
+                                border-right: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tuition__schedule {
+
+                margin-top: 60px;
+                margin-bottom: 35px;
+
+                @include media-breakpoint-down(lg) {
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                }
+
+                .schedule__heading {
+                    color: var(--fill-primary);
+                    font-size: 70px;
+                    font-weight: 600;
+                    line-height: 84px;
+
+                    @include media-breakpoint-down(xl) {
+                        font-size: 50px;
+                        line-height: 64px;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        font-size: 42px;
+                        line-height: 52px;
+                        padding-left: 40px;
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        font-size: 30px;
+                        line-height: 42px;
+                        padding-top: 0px;
+                        padding-left: 0px;
+                        text-align: center;
+                    }
+
+                    span {
+                        color: var(--fill-primary);
+                        font-family: Pacifico;
+                        font-weight: 400;
+                    }
+                }
+
+                .schedule__description {
+                    color: rgba(0, 0, 0, 0.70);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    letter-spacing: 0.46px;
+                    border-left: 1px solid rgba(203, 183, 120, 0.43);
+                    padding-left: 38px;
+
+                    @include media-breakpoint-down(xl) {
+                        font-size: 16px;
+                        line-height: 36px;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        font-size: 15px;
+                        line-height: 32px;
+                    }
+
+
+                    @include media-breakpoint-down(md) {
+                        border-left: none;
+                        padding-left: 0px;
+                        padding-top: 10px;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+
+                .schedule__description__two {
+                    color: rgba(0, 0, 0, 0.7);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    letter-spacing: 0.46px;
+                    padding-top: 20px;
+
+                    @include media-breakpoint-down(xl) {
+                        font-size: 16px;
+                        line-height: 38px;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        font-size: 15px;
+                        line-height: 32px;
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        font-size: 14px;
+                        line-height: 32px;
+                        padding-top: 0px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .tuition__payment {
+                .tuition__payment__heading {
+                    color: #FFF;
+                    font-size: 26px;
+                    font-weight: 600;
+                    line-height: 44px;
+                    background: var(--fill-primary);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.01);
+                    padding: 24px 0px;
+                    text-align: center;
+
+                    @include media-breakpoint-down(lg) {
+                        font-size: 16px;
+                        padding: 8px 0px;
+                    }
+                }
+            }
+
+            .tuition__payment__content {
+                tbody {
+                    td {
+                        background: rgba(0, 38, 73, 0.20);
+                        padding: 0px 84px 0px 30px;
+                        align-items: center;
+                        color: rgba(0, 0, 0, 0.61);
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 44px;
+                        border: 12px solid #fff;
+                        padding: 25px 38px;
+                        margin: auto 0;
+
+                        @include media-breakpoint-down(xl) {
+                            padding: 25px 19px;
+                        }
+
+                        @include media-breakpoint-down(lg) {
+                            padding: 25px 10px;
+                            font-size: 12px;
+                            line-height: 34px;
+                        }
+
+                        @include media-breakpoint-down(sm) {
+                            padding: 10px 10px;
+                            font-size: 12px;
+                            line-height: 25px;
+                        }
+
+                        &:first-child {
+                            border-left: none;
+                        }
+
+                        &:last-child {
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+
+            .aug__tuition__text {
+                .aug__tuitation {
+                    color: rgba(0, 0, 0, 0.70);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 40px;
+                    letter-spacing: 0.46px;
+
+                    @include media-breakpoint-down(xl) {
+                        font-size: 16px;
+                        line-height: 35px;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        font-size: 15px;
+                        line-height: 32px;
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        font-size: 14px;
+                        line-height: 32px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .non__refundable {
+                .non__refundable__table {
+                    .non__refundable__content {
+                        thead {
+                            th {
+                                background: var(--fill-primary);
+                                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.01);
+                                padding: 24px;
+                                border: 12px solid #fff;
+                                color: #FFF;
+                                font-size: 22px;
+                                font-weight: 600;
+                                line-height: 44px;
+                                vertical-align: middle;
+
+                                @include media-breakpoint-down(xl) {
+                                    font-size: 20px;
+                                }
+
+                                @include media-breakpoint-down(lg) {
+                                    font-size: 14px;
+                                }
+
+                                @include media-breakpoint-down(sm) {
+                                    font-size: 13px;
+                                    padding: 8px 8px 8px 7px;
+                                    line-height: 20px;
+                                }
+
+
+                                &:first-child {
+                                    border-left: none;
+                                }
+
+                                &:last-child {
+                                    border-right: none;
+                                }
+                            }
+                        }
+
+                        tbody {
+
+                            tr {
+                                &:nth-of-type(odd) {
+                                    background: rgba(0, 38, 73, 0.20);
+                                }
+
+                                &:nth-of-type(even) {
+                                    background: rgba(0, 38, 73, 0.10);
+                                }
+                            }
+
+                            td {
+                                background: rgba(0, 38, 73, 0.20);
+                                padding: 18px 30px;
+                                border: 12px solid #fff;
+                                color: rgba(0, 0, 0, 0.61);
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 44px;
+
+                                @include media-breakpoint-down(lg) {
+                                    font-size: 13px;
+                                }
+
+                                @include media-breakpoint-down(sm) {
+                                    font-size: 13px;
+                                    padding: 3px 8px;
+                                    line-height: 28px;
+                                }
+
+                                &:first-child {
+                                    border-left: none;
+                                }
+
+                                &:last-child {
+                                    border-right: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .resource__book {
+
+                padding: 10px 0px;
+
+                .resource__book__sm {
+                    @include media-breakpoint-down(lg) {
+                        display: flex;
+                        flex-direction: column-reverse;
+                    }
+                }
+
+                .resource__para {
+                    color: rgba(0, 0, 0, 0.70);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    letter-spacing: 0.46px;
+                    border-right: 1px solid var(--fill-primary);
+                    padding-right: 30px;
+
+                    @include media-breakpoint-down(xxl) {
+                        line-height: 41px;
+                    }
+
+                    @include media-breakpoint-down(xl) {
+                        line-height: 30px;
+                        font-size: 16px;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        line-height: 28px;
+                        font-size: 14px;
+                        border-right: none;
+                        text-align: center;
+                        padding-right: 0px;
+                    }
+                }
+
+                .resource__heading {
+                    color: var(--fill-primary);
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 70px;
+                    padding-top: 44px;
+
+                    @include media-breakpoint-down(xl) {
+                        line-height: 60px;
+                        font-size: 41px;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        line-height: 40px;
+                        font-size: 25px;
+                        padding-top: 0px;
+                        text-align: center;
+                    }
+
+                    span {
+                        color: var(--fill-primary);
+                        font-family: Pacifico;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

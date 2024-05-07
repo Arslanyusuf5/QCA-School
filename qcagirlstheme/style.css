@@ -1,0 +1,21 @@
+/*
+Theme Name:   QCA Girls Theme
+Description:  Girls Child theme for Your QCA Schools Theme
+Author:       Arslan Yousaf
+Template:     qcaschoolstheme
+Version:      1.0.0
+*/
+
+:root {
+    --fill-primary: #560A5C;
+    --fill-secondary: #B62FCA;
+    --h1-fill-primary: #fff;   
+    --about-paragraph-fill: #696984;
+    --advanced-ed-paragraph-fill: #000;
+    --h5-fill: #333333;
+    --qca-form-pragraph: #f5f5f580;
+    --radio-button-fill: #d9afca9e;
+    --radius-checkbox-color: #27AE60;
+    --qca-donation-paragraph: rgba(130, 130, 130, 0.83);
+    --input-fields-border-fill: #E0E0E0;
+}

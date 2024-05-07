@@ -1,0 +1,72 @@
+#join-us-now {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 498px;
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+        height: 380px;
+    }
+
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: rgba(1, 1, 1, 0.80);
+    }
+
+    p{
+        z-index: 3;
+        color: #FFF;
+        text-align: center;
+        font-family: $font-family-base;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+        width: 60%;
+        padding-top: 12%; 
+
+        @include media-breakpoint-down(lg) {
+            width: 90%;
+            padding-top: 18%;
+        }
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            padding-top: 23%;
+            font-size: 39px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            padding-top: 26%;
+            font-size: 26px;
+            line-height: 42px;
+        }
+    }
+
+    a{
+        color: #FFF;
+        font-family: $font-family-base;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background: $brand-primary;
+        padding: 16px 48px;
+
+        @include media-breakpoint-down(md) {
+            padding: 10px 40px;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 6px 30px;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.admission__details {
+    padding: 25px 0px;
+
+    .admission__details__wrapper {
+        .admission__details__title {
+            color: var(--fill-primary);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 44px;
+            border-bottom: 2px solid var(--fill-primary);
+            display: inline-block;
+        }
+
+        .admission__details__heading {
+            padding-top: 20px;
+            color: var(--fill-primary);
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 44px;
+            padding-bottom: 20px;
+
+            @include media-breakpoint-down(xl) {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+
+        .admission__description {
+            color: #696984;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 43.38px;
+            letter-spacing: 0.36px;
+            margin-bottom: 25px;
+
+            @include media-breakpoint-down(xxl) {
+                font-size: 16px;
+                line-height: 36px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+
+        .admission__anchor {
+            a {
+                color: #FFF;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: capitalize;
+                padding: 10px 20px;
+                border-radius: 5px;
+                background: var(--fill-primary);
+                display: inline-block;
+
+                &:hover{
+                    color: var(--fill-primary);
+                    background-color: #FFF;
+                    border: 1px solid var(--fill-primary);
+                }
+            }
+        }
+    }
+
+    .admission__image {
+        img {
+            width: 100%;
+
+            @include media-breakpoint-down(lg){
+                padding-top: 30px;
+            }
+        }
+    }
+}

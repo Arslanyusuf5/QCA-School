@@ -1,0 +1,54 @@
+#hero-cards {
+
+    margin-top: -163px;
+    position: relative;
+    z-index: 5;
+
+    .hero-cards-inner {
+
+        .custom-card {
+            @include transition-standard;
+            border-radius: 20px;
+            border: 1px solid var(--fill-primary);
+            background: var(--h1-fill-primary);
+            height: 100%;
+
+            &:hover {
+                background: var(--fill-primary);
+                color: var(--h1-fill-primary);
+
+                img {
+                    filter: brightness(0) invert(1);
+                    vertical-align: middle;
+                }
+            }
+
+            img {
+                margin-top: 20px;
+                margin-bottom: 10px;
+
+                &:hover {
+                    filter: brightness(0) invert(1);
+                    vertical-align: middle;
+                }
+
+            }
+
+            h4 {
+                padding: 10px 0px;
+                text-align: center;
+                font-size: 20px;
+                line-height: 150%;
+                letter-spacing: 0.388px;
+
+            }
+
+            p {
+                text-align: center;
+                font-size: 14px;
+                line-height: 180%;
+                padding: 5px 15px;
+            }
+        }
+    }
+}

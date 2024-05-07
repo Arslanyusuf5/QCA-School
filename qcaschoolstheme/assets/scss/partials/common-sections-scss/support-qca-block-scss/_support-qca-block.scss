@@ -1,0 +1,130 @@
+.support-qca {
+
+    @include cover-overlay(#000000, 0.63);
+    padding: 30px;
+    margin: 20px 0px 50px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include media-breakpoint-down(lg) {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .section-padding {
+        padding: 0px 50px;
+
+        @include media-breakpoint-down(lg) {
+            padding: 0px;
+        }
+    }
+
+    .title-wrap {
+
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--h1-fill-primary);
+            font-size: 104px;
+            font-weight: 400;
+            line-height: 136px;
+            letter-spacing: -1.04px;
+
+            @include media-breakpoint-down(xl) {
+                font-size: 65px;
+                line-height: 90px;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 45px;
+                line-height: 60px;
+            }
+
+            span {
+                color: var(--fill-secondary);
+                font-weight: 600;
+                letter-spacing: -1.04px;
+            }
+        }
+    }
+
+    .form-wrap {
+
+        background: var(--h1-fill-primary);
+        padding: 20px;
+
+        h5 {
+            color: var(--h5-fill);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+
+            margin-bottom: 20px;
+
+            .form-control {
+                border-radius: 6px;
+                background: var(--qca-form-pragraph);
+            }
+
+        }
+
+        .btn {
+            width: 100%;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 20px 0px 10px 0px;
+            background-color:  var(--fill-primary);
+            color: var(--h1-fill-primary);
+        }
+
+        p {
+            color: var(--qca-donation-paragraph);
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .donation-icons {
+            width: 80%;
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+
+        .donation-checkboxes {
+            margin-bottom: 15px;
+
+            // .btn{
+            //     width: 50%;
+            // }
+
+            .form-check-wrapper {
+
+                gap: 20px;
+                width: 96%;
+
+                .form-check-radio {
+                    border-radius: 5px;
+                    background:  var(--fill-primary);
+                    color: var(--h1-fill-primary);
+                    padding: 5px;
+                }
+
+                .form-check-input:checked {
+                    background-color: var(--radius-checkbox-color);
+                    border-color: var(--radius-checkbox-color);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+@mixin half__width__common_style {
+
+    h3 {
+        color: var(--fill-primary);
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        width: 100%;
+
+        @include media-breakpoint-down(3xl) {
+            font-size: 35px;
+            line-height: 38px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+        }
+    }
+
+    p {
+        color: rgba(0, 0, 0, 0.78);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0.44px;
+        padding-top: 20px;
+
+        @include media-breakpoint-down(3xl) {
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+}
+
+
+.half__width__block {
+
+    position: relative;
+
+    .row__reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .image__half__width {
+
+        img {
+            width: 100%;
+        }
+
+        .system__content {
+            position: absolute;
+            border: 3px solid rgba(0, 0, 0, 0.51);
+            background: #FFF;
+            box-shadow: 0px 4px 17.9px 0px rgba(0, 0, 0, 0.12);
+            padding: 35px 99px 35px 76px;
+            left: 40%;
+            top: 50%;
+            transform: translate(0%, -50%);
+            width: 50%;
+
+            @include media-breakpoint-down(xxl) {
+                padding: 25px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                left: 8%;
+                width: 84%;
+                padding: 25px 25px 10px 25px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+                position: static;
+                transform: none;
+                padding: 40px
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+                position: static;
+                transform: none;
+                padding: 40px
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding: 20px
+            }
+
+            @include half__width__common_style;
+        }
+
+        .right__content {
+            position: absolute;
+            border: 3px solid rgba(0, 0, 0, 0.51);
+            background: #FFF;
+            box-shadow: 0px 4px 17.9px 0px rgba(0, 0, 0, 0.12);
+            padding: 35px 99px 35px 76px;
+            right: 40%;
+            top: 50%;
+            transform: translate(0%, -50%);
+            width: 50%;
+
+            @include media-breakpoint-down(xxl) {
+                padding: 25px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                right: 8%;
+                width: 84%;
+                padding: 25px 25px 10px 25px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+                position: static;
+                transform: none;
+                padding: 40px
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding: 15px
+            }
+
+
+            @include half__width__common_style;
+        }
+    }
+}
+

@@ -1,0 +1,128 @@
+.student__experience {
+
+    padding: 80px 0px 10px 0px;
+    background: linear-gradient(to bottom, #f1f1f1 79%, #ffffff 60%, #ffffff 60%);
+
+    @include media-breakpoint-down(xl){
+        background: rgba(241, 241, 241, 0.80);
+    }
+
+    .content__wrap {
+        h3 {
+            color: var(--fill-primary);
+            font-size: 65px;
+            font-weight: 800;
+            line-height: 44px;
+            padding-top: 0px;
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 61.465px;
+                height: 34.873px;
+                transform: rotate(-50deg);
+                flex-shrink: 0;
+                top: 80%;
+                right: -30px;
+                background: #F4F4F4;
+                border-top: 2px solid #d6d6d6;
+            }
+        }
+
+        h4 {
+            color: var(--fill-primary);
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 40px;
+            padding-top: 15px;
+            padding-left: 67px;
+            
+            @include media-breakpoint-down(md){
+                font-size: 32px;
+                line-height: 40px;
+                padding-left: 30px;
+                padding-top: 30px;
+            }
+
+            span {
+                color: var(--fill-primary);
+                font-weight: 700;
+            }
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.70);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: 0.36px;
+            padding-top: 26px;
+            padding-left: 67px;
+
+            @include media-breakpoint-down(xxl){
+                font-size: 16px;
+                line-height: 30px;
+            }
+
+            @include media-breakpoint-down(md){
+                padding-left: 30px;
+            }
+        }
+    }
+
+    .images__wrapper {
+        img {
+            width: 100%;
+        }
+
+        .images__corner {
+            .image__with__right__corner {
+
+                img {
+                    width: 100%;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 82px;
+                    height: 86px;
+                    background-color: var(--fill-primary);
+                    top: 0;
+                    right: 0;
+                    z-index: 0;
+                }
+            }
+        }
+
+        .images__corner {
+            .image__with__left__corner {
+
+                img {
+                    width: 100%;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 82px;
+                    height: 86px;
+                    background-color: var(--fill-primary);
+                    bottom: 0;
+                    left: 0;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}

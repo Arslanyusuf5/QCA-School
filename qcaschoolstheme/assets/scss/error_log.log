@@ -1,0 +1,89 @@
+04/26/23 9:06:00: style.scss - Undefined mixin media-breakpoint-up: partials/_menu.scss on line 6, at column 5
+Call Stack:
+#0 import partials/_menu.scss style.scss on line 3
+04/26/23 9:51:07: style.scss - Undefined mixin global-font: partials/_global.scss on line 23, at column 5
+Call Stack:
+#0 import partials/_global.scss style.scss on line 1
+04/26/23 9:53:08: style.scss - Undefined mixin global-font: partials/_global.scss on line 23, at column 5
+Call Stack:
+#0 import partials/_global.scss style.scss on line 1
+04/27/23 12:56:05: style.scss - Only 1 argument allowed, but 2 were passed.: partials/_elements.scss on line 76, at column 5
+Call Stack:
+#0 import partials/_elements.scss style.scss on line 3
+04/27/23 12:56:10: style.scss - Only 1 argument allowed, but 2 were passed.: partials/_elements.scss on line 76, at column 5
+Call Stack:
+#0 import partials/_elements.scss style.scss on line 3
+09/27/23 2:46:29: style.scss - `partials/home/_featured` file not found for @import: style.scss on line 9, at column 1
+09/27/23 4:18:32: style.scss - `partials/home/_hero` file not found for @import: style.scss on line 8, at column 1
+09/27/23 4:20:33: style.scss - `partials/home/_hero` file not found for @import: style.scss on line 8, at column 1
+12/31/23 3:50:14: style.scss - `partials/home-page/_home-hero` file not found for @import: style.scss on line 9, at column 1
+12/31/23 3:51:15: style.scss - `partials/home-page/_home-hero` file not found for @import: style.scss on line 9, at column 1
+01/10/24 8:01:30: style.scss - `partials/home-page/_home-hero` file not found for @import: style.scss on line 9, at column 1
+01/10/24 8:01:47: style.scss - `partials/home-page/_home-hero` file not found for @import: style.scss on line 9, at column 1
+01/10/24 8:02:47: style.scss - `partials/home-page/_home-hero` file not found for @import: style.scss on line 9, at column 1
+01/10/24 8:03:31: style.scss - `partials/home_hero_block/_home-hero` file not found for @import: style.scss on line 9, at column 1
+01/11/24 9:13:08: style.scss - unexpected }: failed at `` D:\xampp\htdocs\QCA-Schools\qca-schools\wp-content\themes\qca_schools_theme\assets\scss\partials/qca-programms-block-scss/_qca-programms.scss on line 101, at column 0
+01/12/24 3:36:04: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:05: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:05: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:15: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:17: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:30: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:33: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/12/24 3:36:45: style.scss - `partials/epic-gallery-block-scss/_our-testimonial.scss` file not found for @import: style.scss on line 14, at column 1
+01/13/24 8:57:51: style.scss - `partials/_header-girls` file not found for @import: style.scss on line 5, at column 1
+01/14/24 1:04:48: style.scss - `partials/common-sections-scss/hero-card-block-scss/_hero-card-block.scss` file not found for @import: style.scss on line 23, at column 1
+01/15/24 2:58:53: style.scss - $color: var(--fill-primary) is not a color.: partials/root-scss/_global.scss on line 13, at column 1
+Call Stack:
+#0 import partials/root-scss/_global.scss style.scss on line 1
+01/15/24 3:00:15: style.scss - $color: var(--fill-primary) is not a color.: partials/root-scss/_global.scss on line 13, at column 1
+Call Stack:
+#0 import partials/root-scss/_global.scss style.scss on line 1
+01/17/24 8:49:52: style.scss - parse error: failed at `background: blue);` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/custom-headers-scss/_header-boys.scss on line 215, at column 7
+01/19/24 9:04:50: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/landing-page-scss/tabs-searchbar-block-scss/_tabs-searchbar-block.scss on line 69, at column 0
+01/21/24 2:21:07: style.scss - `partials/landing-page-scss/news-and-updates-hero-block-scss/_news-and-updates-hero-block.scss` file not found for @import: style.scss on line 24, at column 1
+01/21/24 2:21:52: style.scss - `partials/landing-page-scss/news-and-updates-hero-block-scss/_news-and-updates-hero-block.scss` file not found for @import: style.scss on line 24, at column 1
+01/25/24 11:22:20: style.scss - parse error: failed at `none` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/application-process-block-scss/_application-process-block.scss on line 34, at column 26
+01/31/24 3:58:04: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 3:58:55: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 3:59:05: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 3:59:05: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 4:00:05: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 4:00:20: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 4:00:35: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 4:00:35: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 4:01:51: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 4:02:06: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 4:02:22: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 4:02:24: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 4:02:51: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 4:02:52: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 4:02:52: style.scss - `partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss` file not found for @import: style.scss on line 54, at column 1
+01/31/24 10:31:04: style.scss - parse error: failed at `&:l` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss on line 54, at column 21
+01/31/24 10:33:05: style.scss - parse error: failed at `&:l` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss on line 54, at column 21
+01/31/24 10:35:06: style.scss - parse error: failed at `&:l` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/giving-back-service-learning-scss/_giving-back-service-learning.scss on line 54, at column 21
+02/02/24 10:30:35: style.scss - parse error: failed at `$::after{` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/leading-accordian-block-scss/_leading-accordian-block.scss on line 90, at column 17
+02/06/24 3:57:04: style.scss - File partials/root-scss/_mixins.scss on line 40 ERROR: "Opps, seems like the breakpoint is missing "
+: partials/root-scss/_mixins.scss on line 40, at column 9
+Call Stack:
+#0 mixin media-breakpoint-down partials/common-sections-scss/half-width-block-scss/_half-width-block.scss on line 13
+#1 mixin half__width__common_style partials/common-sections-scss/half-width-block-scss/_half-width-block.scss on line 56
+#2 import partials/common-sections-scss/half-width-block-scss/_half-width-block.scss style.scss on line 63
+02/12/24 10:36:06: style.scss - parse error: failed at `padding: ;` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/schedule-booking-form-scss/_schedule-booking-form.scss on line 96, at column 21
+02/12/24 10:37:02: style.scss - parse error: failed at `padding: ;` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/schedule-booking-form-scss/_schedule-booking-form.scss on line 96, at column 21
+02/12/24 10:49:34: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/schedule-booking-form-scss/_schedule-booking-form.scss on line 141, at column 0
+02/13/24 3:42:18: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/admission-fee-structure-scss/_admission-fee-structure.scss on line 466, at column 0
+02/13/24 3:42:42: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/admission-fee-structure-scss/_admission-fee-structure.scss on line 466, at column 0
+02/13/24 3:44:20: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/admission-fee-structure-scss/_admission-fee-structure.scss on line 450, at column 0
+02/13/24 3:44:42: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/admission-fee-structure-scss/_admission-fee-structure.scss on line 450, at column 0
+02/13/24 3:46:20: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/admission-fee-structure-scss/_admission-fee-structure.scss on line 457, at column 0
+02/13/24 3:46:43: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/admission-fee-structure-scss/_admission-fee-structure.scss on line 457, at column 0
+02/13/24 10:02:39: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/community-cards-block-scss/_community-cards-block.scss on line 149, at column 0
+02/13/24 10:04:40: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/community-cards-block-scss/_community-cards-block.scss on line 172, at column 2
+02/13/24 10:06:41: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/common-sections-scss/community-cards-block-scss/_community-cards-block.scss on line 164, at column 2
+02/27/24 4:21:03: style.scss - unexpected }: failed at `` D:\xampp\htdocs\Wordpress-Multisite\qca-boys-girls\wp-content\themes\qcaschoolstheme\assets\scss\partials/custom-headers-scss/_header-girls.scss on line 205, at column 0
+03/24/24 10:01:35: style.scss - File partials/root-scss/_mixins.scss on line 40 ERROR: "Opps, seems like the breakpoint is missing "
+: partials/root-scss/_mixins.scss on line 40, at column 9
+Call Stack:
+#0 mixin media-breakpoint-down partials/custom-headers-scss/_header-girls.scss on line 32
+#1 import partials/custom-headers-scss/_header-girls.scss style.scss on line 5
